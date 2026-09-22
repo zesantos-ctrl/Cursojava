@@ -1,3 +1,5 @@
+package estruturaSequencial;
+
 import java.util.Locale;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or

@@ -1,6 +1,5 @@
-package Exercicios;
+package Exercicios.basico;
 
-import java.util.Enumeration;
 import java.util.Scanner;
 
 public class Funcionario {

@@ -1,3 +1,5 @@
+package estrututraCondicional;
+
 import java.util.Scanner;
 
 public class IfElse {

@@ -1,3 +1,5 @@
+package estruturaSequencial;
+
 public class ProcessamentoCasting {
     public static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+package estruturaSequencial;
+
 public class FuncoesMath {
     public static void main(String[] args) {
         double x = 3.0;
