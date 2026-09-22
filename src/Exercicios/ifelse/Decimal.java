@@ -8,8 +8,6 @@ public class Decimal {
 
         double x = teclado.nextDouble();
         double y = teclado.nextDouble();
-
-<<<<<<< HEAD
         if (x == 0.0 && y == 0.0) {
             System.out.println("Origem");
         } else if (x == 0.0) {
@@ -25,7 +23,6 @@ public class Decimal {
         } else {
             System.out.println("q4");
         }
-=======
 
         if (x == 0.0 && y == 0.0) {
 			System.out.println("Origem");
@@ -48,7 +45,5 @@ public class Decimal {
 		else {
 			System.out.println("Q4");
 		}
-		
->>>>>>> 8be01e62fe29ba94aae9230b0223f17c8b0caa23
     }
 }

@@ -14,7 +14,7 @@ public class While {
             x = teclado.nextInt();
         }
 
-        System.out.println(soma );
+        System.out.println(soma);
         teclado.close();
     }
 }
