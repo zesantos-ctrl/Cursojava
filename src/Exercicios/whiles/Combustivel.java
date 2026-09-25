@@ -22,5 +22,8 @@ public class Combustivel {
             escolha = teclado.nextInt();
         }
         System.out.println("Muito Obrigado");
+        System.out.println("Alcool: " + alcool);
+		System.out.println("Gasolina: " + gasolina);
+		System.out.println("Diesel: " + diesel);
     }
 }
