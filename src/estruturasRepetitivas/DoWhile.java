@@ -17,7 +17,7 @@ public class DoWhile {
             double c = teclado.nextDouble();
             double f = 9.0 * c / 5.0 +32.0;
             System.out.printf("Equivalente em fahrenheit: %.1f%n", f);
-            System.out.print("Deseja repetir (s/n)")
+            System.out.print("Deseja repetir (s/n)");
             resp = teclado.next().charAt(0);
         } while (resp != 'n');
     }
