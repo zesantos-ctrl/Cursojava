@@ -23,5 +23,6 @@ public class EntradaDeDados {
 
         z = teclado.next().charAt(0);
         System.out.println(z);
+        teclado.close();
     }
 }

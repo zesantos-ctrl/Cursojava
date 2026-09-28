@@ -1,6 +1,6 @@
 package orientacaoaobjetos.application;
 
-import orientacaoaobjetos.entities.Triangle;
+import  orientacaoaobjetos.entities.Triangle;
 
 import java.util.Scanner;
 
