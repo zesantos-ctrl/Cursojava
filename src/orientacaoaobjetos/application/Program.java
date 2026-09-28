@@ -1,6 +1,6 @@
 package orientacaoaobjetos.application;
 
-import  orientacaoaobjetos.entities.Triangle;
+import orientacaoaobjetos.entities.Triangle;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class Program {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
-        Triangle x,y;
+        Triangle x, y;
         x = new Triangle();
         y = new Triangle();
 
@@ -21,11 +21,8 @@ public class Program {
         y.b = teclado.nextDouble();
         y.c = teclado.nextDouble();
 
-        double p = (x.a + x.b + x.c) / 2;
-        double areax = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
-
-        p = (y.a + y.b + y.c) / 2;
-        double areay = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+        double areax = x.area();
+        double areay = y.area();
 
         System.out.printf("Triangle x area: %.4f.%n", areax);
         System.out.printf("Triangle y area: %.4f.%n", areay);
@@ -35,6 +32,6 @@ public class Program {
         } else {
             System.out.println("larger area: y");
         }
-
+        teclado.close();
     }
 }
