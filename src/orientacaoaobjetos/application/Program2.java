@@ -14,16 +14,15 @@ public class Program2 {
         String name = teclado.nextLine();
         System.out.println("Price: ");
         double price = teclado.nextDouble();
-        System.out.println("Quantity in stock: ");
-        int quantity = teclado.nextInt();
-        Product product = new Product(name, price, quantity);
+      
+        Product product = new Product(name, price);
 
         System.out.println();
         System.out.println("Product data: " + product);
 
         System.out.println();
         System.out.println("Enter the number of products to be added in stock: ");
-        quantity = teclado.nextInt();
+        int quantity = teclado.nextInt();
         product.addProducts(quantity);
 
         System.out.println();

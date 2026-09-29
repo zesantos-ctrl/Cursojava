@@ -12,6 +12,14 @@ public class Product {
         this.price = price;
         this.quantity = quantity;
     }
+    public Product() {
+    }
+    // sobrecarga é saber disponibizar mais de um versão da mesmo versão a diferença
+    // é a lista de parametros
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
 
     public double totalValueInStock() {
         return price * quantity;
