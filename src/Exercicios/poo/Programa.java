@@ -15,11 +15,11 @@ public class Programa {
 
         if (aluno.finalNota() < 60.0) {
             System.out.println("Failed");
-            System.out.printf("Missing %.2f point5n",aluno.finalNota());
+            System.out.printf("Missing %.2f point5n", aluno.finalNota());
         } else {
             System.out.println("PASS");
         }
+        teclado.close();
 
-        
     }
 }

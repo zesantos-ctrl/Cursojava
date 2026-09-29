@@ -1,4 +1,4 @@
-
+package Exercicios.fors;
 import java.util.Scanner;
 
 public class Casos {

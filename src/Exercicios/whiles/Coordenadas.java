@@ -1,4 +1,4 @@
-
+package Exercicios.whiles;
 import java.util.Scanner;
 
 public class Coordenadas {
@@ -22,5 +22,6 @@ public class Coordenadas {
             x = teclado.nextInt();
             y = teclado.nextInt();
         }
+        teclado.close();
     }
 }

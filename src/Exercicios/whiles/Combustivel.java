@@ -1,4 +1,4 @@
-
+package Exercicios.whiles;
 import java.util.Scanner;
 
 public class Combustivel {
@@ -25,5 +25,6 @@ public class Combustivel {
         System.out.println("Alcool: " + alcool);
 		System.out.println("Gasolina: " + gasolina);
 		System.out.println("Diesel: " + diesel);
+        teclado.close();
     }
 }

@@ -9,21 +9,21 @@ public class Program2 {
 
         Scanner teclado = new Scanner(System.in);
 
-        Product product = new Product();
         System.out.println("Enter product data: ");
         System.out.print("Name: ");
-        product.name = teclado.nextLine();
+        String name = teclado.nextLine();
         System.out.println("Price: ");
-        product.price = teclado.nextDouble();
+        double price = teclado.nextDouble();
         System.out.println("Quantity in stock: ");
-        product.quantity = teclado.nextInt();
+        int quantity = teclado.nextInt();
+        Product product = new Product(name, price, quantity);
 
         System.out.println();
         System.out.println("Product data: " + product);
 
         System.out.println();
         System.out.println("Enter the number of products to be added in stock: ");
-        int quantity = teclado.nextInt();
+        quantity = teclado.nextInt();
         product.addProducts(quantity);
 
         System.out.println();

@@ -19,5 +19,6 @@ public class Pares {
 				System.out.printf("%.1f%n", div);
             }
         }
+        teclado.close();
     }
 }

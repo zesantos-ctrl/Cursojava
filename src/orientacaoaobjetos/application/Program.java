@@ -9,6 +9,7 @@ public class Program {
         Scanner teclado = new Scanner(System.in);
 
         Triangle x, y;
+        // Duas instancias
         x = new Triangle();
         y = new Triangle();
 
@@ -21,7 +22,8 @@ public class Program {
         y.b = teclado.nextDouble();
         y.c = teclado.nextDouble();
 
-        double areax = x.area();
+        //Chamando o metodo da clase triangulo
+        double areax = x.area(); 
         double areay = y.area();
 
         System.out.printf("Triangle x area: %.4f.%n", areax);

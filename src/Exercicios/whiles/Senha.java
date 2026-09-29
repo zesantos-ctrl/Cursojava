@@ -12,5 +12,6 @@ public class Senha {
            senha = teclado.nextInt();
        }
         System.out.println("Acesso permitido");
+        teclado.close();
     }
 }
