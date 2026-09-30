@@ -2,7 +2,7 @@ package orientacaoaobjetos.entities;
 
 public class Product {
     // Private - so pode ser acessado na propria classe
-    String name; // sem private pode ser acessado pela class order
+    private String name; // sem private pode ser acessado pela class order
     private double price;
     private int quantity;
 
@@ -52,7 +52,7 @@ public class Product {
 
     // parametro do metodo
     public void addProducts(int quantity) {
-        this.quantity += quantity; // this palavra reservada, sendo mais
+        this.quantity += quantity; // this palavra reservada
     }
 
     public void removeProducts(int quantity) {
@@ -60,10 +60,10 @@ public class Product {
     }
 
     public String toString() {
-        return name
-                + ", $"
-                + String.format("%.2f", price)
-                + ", " + quantity + " units, total: $"
+        return name + ", $"
+                + String.format("%.2f", price) +
+                ", " + quantity
+                + " units, total: $"
                 + String.format("%.2f", totalValueInStock());
     }
 }

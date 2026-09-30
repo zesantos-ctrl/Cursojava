@@ -11,7 +11,7 @@ public class Order {
         super();
         this.date = date;
         this.product = product;
-        this.product.name = "TV";// name esta no product sem o private
+        //this.product.name = "TV";// name esta no product sem o private
     }
 
     public Date getDate() {

@@ -1,37 +1,56 @@
 package Exercicios.encapsulamento;
 
 public class Usuario {
-    private int conta;
-    private String cliente;
-    private double saldo;
+    private double balance;
+    private String holder;
+    private int number;
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
-    public double getSaldo() {
-        return saldo;
+    public Usuario(String holder, int number) {
+        this.holder = holder;
+        this.number = number;
     }
 
-    public void deposito(double valorDepositado) {
-        if (valorDepositado > 0) {
-            saldo += valorDepositado;
-            System.out.print("");
-        } else {
-            System.out.println("Valor invalido!");
-        }
+    public Usuario(double initialDeposit, String holder, int number) {
+        this.holder = holder;
+        this.number = number;
+        deposit(initialDeposit);
     }
 
-    public void saque(double valorSaque) {
-        if (valorSaque <= 0) {
-            System.out.println("Valor do saque deve ser maior do que zero!");
-            return;
-        }
-
-        if (saldo < valorSaque) {
-   System.out.printf("" + "/nsaldo de %s atual: R$.2f", cliente, saldo);
-        } else {
-            saldo -= valorSaque;
-            System.out.printf("transação realizada com sucesso!" + "/nsaldo de %s atual: R$.2f", cliente, saldo);
-        }
+    //Mesma coisa, aqui é o saque e ele so poder ser alterado pelo deposito e saque
+    public double getBalance() {
+        return balance;
     }
+
+    public String getHolder() {
+        return holder;
+    }
+
+    public void setHolder(String holder) {
+        this.holder = holder;
+    }
+
+    // Numero da conta não pode ser alterado, então so criamos o get
+    public int getNumber() {
+        return number;
+    }
+
+    // Adicionando saldo
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    // sacando o saldo
+    public void withdraw(double amount) {
+        balance -= amount + 5.0;
+    }
+
+    public String toString() {
+        return "Accoutn"
+                + number
+                + ", holder: "
+                + holder
+                + ", balance: $"
+                + String.format("%.2f", balance);
+    }
+
 }
