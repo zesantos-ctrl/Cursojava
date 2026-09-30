@@ -1,10 +1,10 @@
 package orientacaoaobjetos.entities;
 
 public class Product {
-
-    public String name;
-    public double price;
-    public int quantity;
+    // Private - so pode ser acessado na propria classe
+    String name; // sem private pode ser acessado pela class order
+    private double price;
+    private int quantity;
 
     // construtor
     public Product(String name, double price, int quantity) {
@@ -12,15 +12,40 @@ public class Product {
         this.price = price;
         this.quantity = quantity;
     }
+
     public Product() {
     }
-    // sobrecarga é saber disponibizar mais de um versão da mesmo versão a diferença
-    // é a lista de parametros
+
+    // Sobrecarga é disponibilizar mais de uma versão do mesmo método
+    // na mesma classe. A diferença está na lista de parâmetros (tipo, quantidade ou
+    // ordem).
     public Product(String name, double price) {
         this.name = name;
         this.price = price;
     }
 
+    // metodos de encapsulamento
+    public String getName() {
+        return getName();
+    }
+
+    public void setName(String name) {
+        this.setName(name);
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    // metodos
     public double totalValueInStock() {
         return price * quantity;
     }
