@@ -1,27 +1,18 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-
 public class Main {
 
     public static void main(String[] args) throws IOException {
 
         Scanner teclado = new Scanner(System.in);
-        int cod1;
-        int cod2;
-        int qted1;
-        int qted2;
 
-        double preco1, preco2, total;
-        cod1 = teclado.nextInt();
-        qted1 = teclado.nextInt();
-        preco1 = teclado.nextDouble();
-        cod2 = teclado.nextInt();
-        qted2 = teclado.nextInt();
-        preco2 = teclado.nextDouble();
+        int a = teclado.nextInt();
+        int b = teclado.nextInt();
+        int c = teclado.nextInt();
 
-        total = preco1 * qted1 + preco2 * qted2;
-        System.out.printf("VALOR A PAGAR: R$ %.2f%n", total);
+        int maiorAb = (a + b + Math.abs(a-b)) / 2;
+        int maior = (maiorAb + c + Math.abs(maiorAb - c)) / 2;
+        System.out.println(maior + " eh o maior");
     }
-
 }
