@@ -21,5 +21,6 @@ public class Intervalos {
         }
         System.out.println(in + " in");
         System.out.println(out + " out");
+        teclado.close();
     }
 }

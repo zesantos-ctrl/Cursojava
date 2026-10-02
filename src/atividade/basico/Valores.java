@@ -7,14 +7,14 @@ public class Valores {
 
         Scanner teclado = new Scanner(System.in);
 
-        double a,b,c, triangulo, circulo, trapezio, quadrado, retangulo;
+        double a, b, c, triangulo, circulo, trapezio, quadrado, retangulo;
 
         System.out.println("a: ");
         a = teclado.nextDouble();
         System.out.println("b: ");
         b = teclado.nextDouble();
         System.out.println("c: ");
-        c= teclado.nextDouble();
+        c = teclado.nextDouble();
 
         triangulo = a * b / 2.0;
         circulo = 3.14159 * c * c;
@@ -27,5 +27,6 @@ public class Valores {
         System.out.printf("TRAPEZIO: %.3f%n", trapezio);
         System.out.printf("QUADRADO: %.3f%n", quadrado);
         System.out.printf("RETANGULO: %.3f%n", retangulo);
+        teclado.close();
     }
 }

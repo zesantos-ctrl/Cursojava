@@ -20,5 +20,6 @@ public class Inteiros {
 
         int diferanca = (a*b-c*d);
         System.out.println(diferanca);
+        teclado.close();
     }
 }

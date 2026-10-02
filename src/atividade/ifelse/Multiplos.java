@@ -17,5 +17,6 @@ public class Multiplos {
         } else {
             System.out.println("não são multiplos");
         }
+        teclado.close();
     }
 }

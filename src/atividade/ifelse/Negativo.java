@@ -15,5 +15,6 @@ public class Negativo {
         } else {
             System.out.println("negativo");
         }
+        teclado.close();
     }
 }

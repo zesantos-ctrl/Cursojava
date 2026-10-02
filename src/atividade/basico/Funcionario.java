@@ -18,5 +18,6 @@ public class Funcionario {
         System.out.println("Numero : " + funcionario);
         double salary = salario * hora;
         System.out.println("teste: "+ salary);
+        teclado.close();
     }
 }

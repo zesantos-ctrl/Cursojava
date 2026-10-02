@@ -12,5 +12,6 @@ public class RaioDoCirculo {
         double area =  Math.PI * raio * raio;
 
         System.out.printf("%.4f%n",area);
+        teclado.close();
     }
 }

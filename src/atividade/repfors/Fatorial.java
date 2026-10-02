@@ -12,5 +12,6 @@ public class Fatorial {
             fatorial *= i;
         }
         System.out.println(fatorial);
+        teclado.close();
     }
 }

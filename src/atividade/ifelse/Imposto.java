@@ -1,7 +1,6 @@
 
 package atividade.ifelse;
 
-
 import java.util.Scanner;
 
 public class Imposto {
@@ -27,6 +26,7 @@ public class Imposto {
         } else {
             System.out.printf("R$ %.2f%n", imposto);
         }
+        teclado.close();
 
     }
 }

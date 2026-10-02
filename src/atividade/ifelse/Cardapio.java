@@ -19,9 +19,10 @@ public class Cardapio {
             total = quantidade * 5.0;
         } else if (codigo == 4) {
             total = quantidade * 2.0;
-        } else  {
+        } else {
             total = quantidade * 1.5;
         }
         System.out.printf("Total: R$ %.2f%n", total);
+        teclado.close();
     }
 }

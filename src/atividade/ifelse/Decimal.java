@@ -24,5 +24,6 @@ public class Decimal {
         } else {
             System.out.println("q4");
         }
+        teclado.close();
     }
 }
