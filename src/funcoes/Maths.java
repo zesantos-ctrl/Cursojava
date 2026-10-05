@@ -13,6 +13,7 @@ public class Maths {
 
         int higher = max(a, b, c);
         showResult(higher);
+        teclado.close();
     }
 
     public static int max(int x, int y, int z) {
@@ -24,8 +25,9 @@ public class Maths {
         } else {
             aux = y;
         }
-        return  aux;
+        return aux;
     }
+
     public static void showResult(int value) {
         System.out.println("Higher = " + value);
     }

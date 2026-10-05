@@ -8,7 +8,7 @@ public class VetoresPartI {
 
         int n = teclado.nextInt();
         double[] vect = new double[n]; // vetor
-
+                            // tamanho do vetor
         for (int i = 0; i < n; i++) {
             vect[i] = teclado.nextDouble();
         }
@@ -18,7 +18,7 @@ public class VetoresPartI {
             sum += vect[i];
         }
         double avg = sum / n;
-        System.out.println("AVERAGE HEIGHT: " + avg);
+        System.out.printf("AVERAGE HEIGHT: %.2f%n", avg);
         teclado.close();
     }
 }

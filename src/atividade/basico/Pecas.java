@@ -24,6 +24,9 @@ public class Pecas {
         total = preco1 * qte1 + preco2 * qte2;
 
         System.out.println("Valor a pagar: " + total);
+        System.out.println(cod1);
+        System.out.println(cod2);
+        
         teclado.close();
     }
 }

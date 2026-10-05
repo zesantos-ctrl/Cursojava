@@ -9,12 +9,14 @@ public class Produtos {
 
         int idade = 22;
         int codigo = 2342;
-        char genero =  'M';
+        char genero = 'M';
 
         double preco1 = 2100.0;
         double preco2 = 5650.50;
         double medir = 53.23567;
 
+        System.out.println(produto1);
+        System.out.println(produto2);
         System.out.println("Produtos: ");
         System.out.printf("Cpmputador, wich price is $ %.2f%n", preco1);
         System.out.printf("Office desk, wich price is $ %.2f%n", preco2);
