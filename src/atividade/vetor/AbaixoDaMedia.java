@@ -34,5 +34,6 @@ public class AbaixoDaMedia {
                 System.out.printf("%.1f\n", vetor[i]);
             }
         }
+        teclado.close();
     }
 }

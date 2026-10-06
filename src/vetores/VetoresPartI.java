@@ -2,7 +2,7 @@ package vetores;
 
 import java.util.Scanner;
 
-public class VetoresPartI {
+public class   VetoresPartI {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 

@@ -11,20 +11,20 @@ public class Positivo {
         System.out.println("Quantos numeros voce vai digitar? ");
         n = teclado.nextInt();
 
-        int[] vetor = new int[n];
+        int[] vect = new int[n];
 
         for (int i = 0; i < n; i++) {
             System.out.println("Digite um numero: ");
-            vetor[i] = teclado.nextInt();
+            vect[i] = teclado.nextInt();
         }
 
-        System.out.println("NUMEROS NEGTIVOS: ");
+        System.out.println("NUMERO NEGATIVOS: ");
 
-        for (int i = 0; i < n; i++) {
-            if (vetor[i] < 0) {
-                System.out.printf("%d\n", vetor[i]);
+        for (int i = 0; i < n;
+             i++) {
+            if (vect[i] < 0) {
+
             }
         }
-        teclado.close();
     }
 }
