@@ -7,6 +7,7 @@ public class SomarVetor {
         Scanner teclado = new Scanner(System.in);
 
         int n;
+        double soma, media;
         System.out.println("Quantos numeros voce vai digitar? ");
         n = teclado.nextInt();
 
@@ -17,14 +18,19 @@ public class SomarVetor {
             vect[i] = teclado.nextDouble();
         }
 
-        double soma = 0.0; 
+        soma = 0;
         for (int i = 0; i < n; i++) {
             soma += vect[i];
         }
-        double media = soma / n;
-        System.out.printf("VALORES = %d\n", vect[n]);
-        System.out.printf("SOMA = %d\n", media);
-        System.out.printf("MEDIA = %d\n", soma);
+        media = soma / n;
+        System.out.print("VALORES =  ");
+
+        for (int i = 0; i < n; i++) {
+            System.out.printf("%.1f ", vect[i]);
+        }
+
+        System.out.printf("\nSOMA = %.2f\n", media);
+        System.out.printf("MEDIA = %.2f\n", soma);
 
     }
 }
