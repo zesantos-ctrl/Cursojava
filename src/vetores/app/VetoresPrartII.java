@@ -1,56 +1,34 @@
 package vetores.app;
 
-<<<<<<< Updated upstream
+import vetores.entiti.Produto;
+
+import java.util.Locale;
 import java.util.Scanner;
 
-import vector.entiti.Produto;
-
-=======
-import vetores.entities.Product;
-
-import java.util.Scanner;
-
->>>>>>> Stashed changes
 public class VetoresPrartII {
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
         Scanner teclado = new Scanner(System.in);
 
         int n = teclado.nextInt();
-<<<<<<< Updated upstream
+
         Produto[] vect = new Produto[n];
-=======
-        Product[] vect = new Product[n];
->>>>>>> Stashed changes
 
         for (int i = 0; i < vect.length; i++) {
-            teclado.nextLine();
+            teclado.nextLine();                 // consome a quebra de linha pendente
             String name = teclado.nextLine();
             double price = teclado.nextDouble();
-<<<<<<< Updated upstream
             vect[i] = new Produto(name, price);
         }
 
         double sum = 0.0;
-        for (int i = 0; i < n; i++) {
-            sum += vect[i].getPrice();
-        }
-        double avg = sum / n;
-
-        System.out.printf("AVERAGE PRICE = %.2f%n", avg);
-
-=======
-            vect[i] = new Product(name, price);
-            //o vect esta apontando para classe produto
-        }
-
-        double sum = 0.0;
-        for (int i=0;i< vect.length;i++) {
+        for (int i = 0; i < vect.length; i++) {
             sum += vect[i].getPrice();
         }
         double avg = sum / vect.length;
 
-        System.out.printf("AVERAGE PRICE = %.2F%N", avg);
->>>>>>> Stashed changes
+        System.out.printf("AVERAGE PRICE = %.2f%n", avg);
+
         teclado.close();
     }
 }
