@@ -1,4 +1,5 @@
-package atividade.vetor2;
+package atividade.vetor;
+
 
 public class Rent {
     private String name;

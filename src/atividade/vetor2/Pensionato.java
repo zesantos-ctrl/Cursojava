@@ -2,6 +2,8 @@ package atividade.vetor2;
 
 import java.util.Scanner;
 
+import atividade.vetor.Rent;
+
 public class Pensionato {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
