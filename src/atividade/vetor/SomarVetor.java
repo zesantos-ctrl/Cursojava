@@ -31,6 +31,6 @@ public class SomarVetor {
 
         System.out.printf("\nSOMA = %.2f\n", media);
         System.out.printf("MEDIA = %.2f\n", soma);
-
+        teclado.close();
     }
 }

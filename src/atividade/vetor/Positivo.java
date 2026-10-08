@@ -20,11 +20,11 @@ public class Positivo {
 
         System.out.println("NUMERO NEGATIVOS: ");
 
-        for (int i = 0; i < n;
-             i++) {
+        for (int i = 0; i < n; i++) {
             if (vect[i] < 0) {
 
             }
         }
+        teclado.close();
     }
 }

@@ -35,5 +35,6 @@ public class MediaPares {
 
             }
         }
+        teclado.close();
     }
 }

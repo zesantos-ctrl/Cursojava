@@ -11,5 +11,6 @@ public class Main {
 
         int distancia = x * 2;
         System.out.println(distancia + " minutos");
+        teclado.close();
     }
 }

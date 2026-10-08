@@ -32,6 +32,7 @@ public class MaisVelho {
         }
 
         System.out.printf("PESSOA MAIS VELHA: %s\n", nome[posicao]);
+        teclado.close();
     }
 
 }

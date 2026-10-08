@@ -1,7 +1,5 @@
 package funcoes.strings;
 
-import java.util.Scanner;
-
 public class Strings {
     public static void main(String[] args) {
         String original = "abcde FEGHIJ ABC abc DEFG";
@@ -23,6 +21,7 @@ public class Strings {
         System.out.println("substring(2): -" + s04 + "-");
         System.out.println("substring(2,9): -" + s05 + "-");
         System.out.println("replace: -" + s06 + "-");
+        System.out.println("replace: -" + s07 + "-");
         System.out.println("indexOf: -" + i);
         System.out.println("lastIndexOf: -" + j);
     }
