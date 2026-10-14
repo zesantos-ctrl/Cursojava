@@ -45,7 +45,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order [id=" + id + ", moment=" + moment + ", status=" + status + "]";
+        return "id = " + id + ", moment = " + moment + ", status = " + status;
     }
 
 }
