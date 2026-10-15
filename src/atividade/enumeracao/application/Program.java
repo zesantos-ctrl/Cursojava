@@ -1,14 +1,13 @@
 package atividade.enumeracao.application;
 
-import java.sql.Date;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Scanner;
-
 import atividade.enumeracao.entities.Departamento;
 import atividade.enumeracao.entities.HorasContrato;
 import atividade.enumeracao.entities.Worker;
 import atividade.enumeracao.enums.WorkerLevel;
+import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) throws ParseException {
