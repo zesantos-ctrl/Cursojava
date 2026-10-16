@@ -52,9 +52,9 @@ public class Program {
             order.addItem(ordemItem);
         }
 
-         System.out.println();
-         System.out.println("ORDER SUMMARY: ");
-         System.out.println(order);
+        System.out.println();
+        System.out.println("ORDER SUMMARY: ");
+        System.out.println(order);
 
         teclado.close();
     }
