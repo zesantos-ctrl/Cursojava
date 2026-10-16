@@ -41,6 +41,4 @@ public class Client {
         this.birthDate = birthDate;
     }
 
-    
-
 }
