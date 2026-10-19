@@ -2,7 +2,7 @@
 
 Repositório com os exercícios e anotações práticas do meu estudo de **Java**, organizado em pacotes por tema — dos fundamentos da linguagem até orientação a objetos, herança e coleções.
 
-> Material de estudo: *Nelio Alves * e Oracle - Java Documentation.
+> Material de estudo: *Nelio Alves* e Oracle - Java Documentation.
 
 ---
 
