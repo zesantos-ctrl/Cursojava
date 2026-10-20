@@ -7,8 +7,8 @@ import java.util.Scanner;
 import atividade.poli2.entities.ImportProduct;
 import atividade.poli2.entities.Product;
 import atividade.poli2.entities.UsedProduct;
-
 import java.time.LocalDate;
+
 import java.time.format.DateTimeFormatter;
 
 public class Program {
@@ -30,6 +30,7 @@ public class Program {
             String name = teclado.nextLine();
             System.out.println("Preço: ");
             double price = teclado.nextDouble();
+            
             if (ch == 'c') {
                 list.add(new Product(name, price));
             } else if (ch == 'u') {
