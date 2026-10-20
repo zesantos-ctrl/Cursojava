@@ -76,9 +76,10 @@ public class Order {
         sb.append(", status = ").append(status);
         sb.append(", client = ").append(client);
         sb.append(", ordemItems = ").append(ordemItems);
-        for (OrdemItem item  : ordemItems) {
+        for (OrdemItem item : ordemItems) {
             sb.append(ordemItems + "\n");
-        } 
+            System.out.println(item);
+        }
         sb.append("Total price: $");
         sb.append(String.format("%.2f", total()));
         return sb.toString();
