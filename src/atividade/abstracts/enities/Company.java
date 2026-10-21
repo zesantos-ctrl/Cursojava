@@ -4,7 +4,9 @@ public class Company extends TaxPayer {
 
     private int numberOfEmployees;
 
-    public Company(){}
+    public Company() {
+    }
+
     public Company(String name, double anualIncome, int numberOfEmployees) {
         super(name, anualIncome);
         this.numberOfEmployees = numberOfEmployees;

@@ -3,7 +3,9 @@ package atividade.abstracts.enities;
 public class Individual extends TaxPayer {
 
     private double healthExpenditures;
-    public Individual(){}
+
+    public Individual() {
+    }
 
     public Individual(String name, double anualIncome, double healthExpenditures) {
         super(name, anualIncome);

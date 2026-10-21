@@ -41,7 +41,9 @@ public class Program {
 
         System.out.println();
         System.out.println("TAXES PAID: ");
-
+        for (TaxPayer tp : list) {
+            System.out.println(tp.getName() + " : $" + String.format(" %.2f", tp.tax()));
+        }
         teclado.close();
     }
 }
