@@ -2,13 +2,14 @@ package atividade.abstracts.enities;
 
 public abstract class TaxPayer {
     private String name;
-    private double anualcome;
+    private double anualIncome;
 
     public TaxPayer() {
     }
 
-    public TaxPayer(double anualcome) {
-        this.anualcome = anualcome;
+    public TaxPayer(String name, double anualIncome) {
+        this.name = name;
+        this.anualIncome = anualIncome;
     }
 
     public String getName() {
@@ -20,11 +21,12 @@ public abstract class TaxPayer {
     }
 
     public double getAnualcome() {
-        return anualcome;
+        return anualIncome;
     }
 
-    public void setAnualcome(double anualcome) {
-        this.anualcome = anualcome;
+    public void setAnualcome(double anualIncome) {
+        this.anualIncome = anualIncome;
     }
 
+    public abstract double tax();
 }

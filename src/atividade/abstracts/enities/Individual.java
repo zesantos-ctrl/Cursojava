@@ -1,5 +1,36 @@
 package atividade.abstracts.enities;
 
-public class Individual {
+public class Individual extends TaxPayer {
+
+    private double healthExpenditures;
+    public Individual(){}
+
+    public Individual(String name, double anualIncome, double healthExpenditures) {
+        super(name, anualIncome);
+        this.healthExpenditures = healthExpenditures;
+    }
+
+    public double getHealthExpenditures() {
+        return healthExpenditures;
+    }
+
+    public void setHealthExpenditures(double healthExpenditures) {
+        this.healthExpenditures = healthExpenditures;
+    }
+
+    @Override
+    public double tax() {
+        double basicTax;
+        if (getAnualcome() < 20000.0) {
+            basicTax = getAnualcome() * 0.15;
+        } else {
+            basicTax = getAnualcome() * 0.25;
+        }
+        basicTax -= getAnualcome() * 0.5;
+        if (basicTax < 0.0) {
+            basicTax = 0.0;
+        }
+        return basicTax;
+    }
 
 }
