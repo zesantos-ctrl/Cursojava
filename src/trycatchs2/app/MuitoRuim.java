@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-import trycatchs2.model.Reservation;
+import trycatchs2.app.model.entities.Reservation;
 
 public class MuitoRuim {
     public static void main(String[] args) throws ParseException {

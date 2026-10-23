@@ -1,4 +1,4 @@
-package trycatchs2.model;
+package trycatchs2.app.model.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -11,6 +11,7 @@ public class Reservation {
     private Date checkout;
 
     private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
     public Reservation() {
     }
 
@@ -41,17 +42,16 @@ public class Reservation {
         return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
     }
 
-    public String updateDates(Date checkin, Date checkout) {
+    public void updateDates(Date checkin, Date checkout) {
         Date now = new Date();
         if (!checkin.before(now) || checkout.before(now)) {
-            return "Reservation dates for updatemust be future dates";
+            throw new IllegalArgumentException("Reservation dates for updatemust be future dates");
         }
         if (!checkout.after(checkin)) {
-            return "Check-out date must be after check-in date";
+            throw new IllegalArgumentException("Check-out date must be after check-in date");
         }
         this.checkin = checkin;
         this.checkout = checkout;
-        return null;
     }
 
     @Override
