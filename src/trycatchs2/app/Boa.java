@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 import trycatchs2.app.model.entities.Reservation;
+import trycatchs2.model.exception.DomainException;
 
 public class Boa {
     public static void main(String[] args) {
@@ -34,8 +35,8 @@ public class Boa {
             System.out.println("Reservation:" + reservation);
         } catch (ParseException e) {
             System.out.println("Invalid date format");
-        } catch (IllegalArgumentException e) {
-            System.out.println("Error in reservation: " + e.getMessage());
+        } catch (RuntimeException e) {
+            System.out.println("Unexpeted error");
         }
         teclado.close();
     }
