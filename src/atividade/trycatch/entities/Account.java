@@ -1,6 +1,6 @@
 package atividade.trycatch.entities;
 
-import atividade.trycatch.model.MyException;
+import atividade.trycatch.MyException;
 
 public class Account {
 

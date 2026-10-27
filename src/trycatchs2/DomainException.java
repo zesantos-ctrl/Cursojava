@@ -1,8 +1,6 @@
-package trycatchs2.model.exception;
+package trycatchs2.exception;
 
 public class DomainException extends RuntimeException {
-    private static final long serialVersionUID = 1L;
-
     public DomainException(String msg) {
         super(msg);
     }

@@ -1,4 +1,4 @@
-package atividade.trycatch.model;
+package atividade.trycatch;
 
 public class MyException extends RuntimeException {
     public MyException(String msg) {

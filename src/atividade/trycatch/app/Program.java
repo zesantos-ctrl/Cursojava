@@ -1,7 +1,7 @@
 package atividade.trycatch.app;
 
+import atividade.trycatch.MyException;
 import atividade.trycatch.entities.Account;
-import atividade.trycatch.model.MyException;
 
 import java.util.Scanner;
 
