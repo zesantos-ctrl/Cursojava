@@ -2,6 +2,7 @@ package interfaces1.app;
 
 import interfaces1.entites.CarRental;
 import interfaces1.entites.Vehicle;
+import interfaces1.model.BrazilTaxService;
 import interfaces1.model.RentalService;
 
 import java.time.LocalDateTime;
@@ -33,7 +34,7 @@ public class Program {
         System.out.println("Entre com o preço por dia: ");
         double pricePerDay = teclado.nextDouble();
 
-        RentalService rs = new RentalService(pricePerDay, pricePerHour, null);
+        RentalService rs = new RentalService(pricePerDay, pricePerHour, new BrazilTaxService());
 
         rs.processInvoice(cr);
 
