@@ -17,6 +17,6 @@ public class Jogo {
         } else {
             duracao = 24 - horaFinal + horaInicial;
         }
-        System.out.println("O JOGO DUROU " + duracao + " HORA(S)")
+        System.out.println("O JOGO DUROU " + duracao + " HORA(S)");
     }
 }
