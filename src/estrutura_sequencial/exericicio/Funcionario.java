@@ -13,7 +13,6 @@ public class Funcionario {
         System.out.println("Salario: ");
         double salario = teclado.nextDouble();
 
-
         double resul = hora * salario;
 
         System.out.println("Number = " + numero);

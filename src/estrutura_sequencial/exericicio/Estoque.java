@@ -19,7 +19,7 @@ public class Estoque {
 
         total = preco1 * qte1 + preco2 * qte2;
 
-        System.out.printf("Valor a pagar: R$ %.2f%n",total);
+        System.out.printf("Valor a pagar: R$ %.2f%n", total);
 
     }
 }

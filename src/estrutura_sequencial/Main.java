@@ -50,15 +50,5 @@ public class Main {
         // Casting
         resultado = (double) n / m;
         System.out.println(resultado);
-
-
-        // Exemplo 5
-        double p;
-        int t;
-
-        p = 5.0;
-        t = (int) a;
-        System.out.println(t);
-
     }
 }

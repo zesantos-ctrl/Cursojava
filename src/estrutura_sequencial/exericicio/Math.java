@@ -17,7 +17,6 @@ public class Math {
         double quadrado = b * b;
         double retangulo = a * b;
 
-
         System.out.printf("TRIANGULO: %.3f%n", triangulo);
         System.out.printf("CIRCULO: %.3f%n", circulo);
         System.out.printf("TRAPEZIO: %.3f%n", trapezio);

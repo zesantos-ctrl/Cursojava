@@ -26,8 +26,9 @@ public class Entrada {
 
         System.out.println("======//===============//==========");
 
+        //Lendo varias linhas 
         int s4;
-        String s1,s2,s3;
+        String s1, s2, s3;
 
         s4 = teclado.nextInt();
         teclado.nextLine();
@@ -42,9 +43,6 @@ public class Entrada {
         System.out.println(s3);
 
         System.out.println("======//===============//==========");
-
-
-
 
         teclado.close();
     }
