@@ -8,13 +8,31 @@ public class Main {
 
         Produto p = new Produto();
 
-        System.out.println("");
-        System.out.println("Name: ");
+        System.out.println("Enter product data");
+        System.out.print("Name: ");
         p.nome = teclado.nextLine();
-        System.out.println("Preco: ");
+        System.out.print("Preco: ");
         p.preco = teclado.nextDouble();
-        System.out.println("Quantidade: ");
+        System.out.print("Quantidade: ");
         p.quantidade = teclado.nextInt();
-        System.out.println(p.nome + p.preco + p.quantidade);
+
+        System.out.println();
+        System.out.println("Produto: " + p);
+
+        System.out.println();
+        System.out.println("Enter the number products to be added in stock: ");
+        int quantidade = teclado.nextInt();
+        p.addProduto(quantidade);
+
+        System.out.println();
+        System.out.println("Produto: " + p);
+
+        System.out.println();
+        System.out.println("Enter the number products to be removed in stock: ");
+        quantidade = teclado.nextInt();
+        p.removerProdutos(quantidade);
+
+        System.out.println();
+        System.out.println("Produto: " + p);
     }
 }
