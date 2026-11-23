@@ -1,4 +1,4 @@
-package intro_poo.exercicio;
+package intro_poo.exercicio.funcionario;
 
 public class Funcionario {
 
