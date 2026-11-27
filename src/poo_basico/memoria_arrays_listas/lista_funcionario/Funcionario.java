@@ -1,14 +1,14 @@
 package lista_funcionario;
 
 public class Funcionario {
- private int id;
+    private Integer id;
     private String nome;
-    private double salario;
+    private Double salario;
 
     public Funcionario() {
     }
 
-    public Funcionario(int id, String nome, double salario) {
+    public Funcionario(int id, String nome, Double salario) {
         this.id = id;
         this.nome = nome;
         this.salario = salario;
@@ -30,12 +30,12 @@ public class Funcionario {
         this.nome = nome;
     }
 
-    public double getSalario() {
+    public Double getSalario() {
         return salario;
     }
 
-    public double aumento(double porcentagem) {
-        return salario += salario * porcentagem / 100;
+    public void aumento(Double porcentagem) {
+        salario += salario * porcentagem / 100;
     }
 
     @Override

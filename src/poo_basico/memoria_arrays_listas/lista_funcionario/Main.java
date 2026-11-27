@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-public static void main(String[] args) {
+    public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
         List<Funcionario> f = new ArrayList<>();
@@ -14,7 +14,8 @@ public static void main(String[] args) {
         int n = teclado.nextInt();
 
         for (int i = 0; i < n; i++) {
-            System.out.printf("Funcionario #%d:\n", i + 1);
+            System.out.println();
+            System.out.println("Funcionario #" + (i + 1) + ":");
             System.out.print("Id: ");
             int id = teclado.nextInt();
             System.out.print("Nome: ");
@@ -32,10 +33,15 @@ public static void main(String[] args) {
                 .filter(x -> x.getId() == idBusca)
                 .findFirst().orElse(null);
 
-        System.out.println("Enter the percentage: ");
-        double pc = teclado.nextDouble();
-        idResult.aumento(pc);
+        if (idResult == null) {
+            System.out.println("Este ID não existe.");
+        } else {
+            System.out.println("Enter the percentage: ");
+            double prc = teclado.nextDouble();
+            idResult.aumento(prc);
+        }
 
+        System.out.println();
         System.out.println("Lista de funcionarios: ");
         for (Funcionario t : f) {
             System.out.println(t);
