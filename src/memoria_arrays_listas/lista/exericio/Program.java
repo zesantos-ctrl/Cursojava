@@ -3,6 +3,7 @@ package memoria_arrays_listas.lista.exericio;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Program {
     public static void main(String[] args) {
@@ -27,8 +28,14 @@ public class Program {
         }
 
         System.out.println("Enter the employee id that  will have salary inrease: ");
-        
+        int idBusca = teclado.nextInt();
+        Funcionario idResult = f.stream()
+                .filter(x -> x.getId() == idBusca)
+                .findFirst().orElse(null);
+
         System.out.println("Enter the percentage: ");
+        double pc = teclado.nextDouble();
+        idResult.aumento(pc);
 
         System.out.println("Lista de funcionarios: ");
         for (Funcionario t : f) {

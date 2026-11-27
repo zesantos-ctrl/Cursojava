@@ -35,13 +35,8 @@ public class Funcionario {
         return salario;
     }
 
-    public void setSalario(double salario) {
-        this.salario = salario;
-    }
-
-
-    public double porcentagem() {
-
+    public double aumento(double porcentagem) {
+        return salario += salario * porcentagem / 100;
     }
 
     @Override
@@ -49,5 +44,5 @@ public class Funcionario {
         return id + ", " + nome + ", " + salario;
     }
 
-    
+
 }
